@@ -2,7 +2,6 @@ import Foundation
 
 struct ApiUrls {
     struct PublicIp {
-        //https://cloudflare.com/cdn-cgi/trace
-        static let readPublicIpInfo = "http://ip-api.com/json/"
+        static let readPublicIpInfo = "https://api.ipify.org?format=json"
     }
 }

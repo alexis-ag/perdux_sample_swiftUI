@@ -9,5 +9,10 @@ struct ConnectivityInfoContainer: View {
         ConnectivityInfoView(props: .init(
                 status: connectivityState.networkStatus
         ))
+        .onAppear(perform: forceCheckStatus)
+    }
+
+    private func forceCheckStatus() {
+        ActionDispatcher.emitAsync(NetworkSideEffect.forceUpdateStatus)
     }
 }

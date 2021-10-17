@@ -7,7 +7,14 @@ struct PublicIpInfoContainer: View {
 
     var body: some View {
         PublicIpInfoView(props: .init(
-                info: connectivityState.publicIpInfo
+                info: connectivityState.publicIpInfo,
+                error:  connectivityState.error,
+                obtainInfo: loadPublicIpInfo
         ))
+            .onAppear(perform: loadPublicIpInfo)
+    }
+
+    private func loadPublicIpInfo() {
+        ActionDispatcher.emitAsync(NetworkSideEffect.obtainPublicIpInfo)
     }
 }

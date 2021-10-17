@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4DAB7BAB3BD916AA6522B5 /* Pods_perdux_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31388FBA19053201360762BF /* Pods_perdux_sample.framework */; };
 		5ED4B2DA271C1E9D000DDF2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ED4B2D9271C1E9D000DDF2F /* Assets.xcassets */; };
 		ABA7B063B88B1BA0F985E3FB /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B0DA2231BF2E42FF73BD /* NSError.swift */; };
 		ABA7B063D560C98601C48BB4 /* ApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4C69D0412C0D33251EF /* ApiFetcher.swift */; };
@@ -14,6 +15,7 @@
 		ABA7B0930D2647E5CB20AA28 /* PublicIpInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B57A3DE32A2536F7203D /* PublicIpInfoView.swift */; };
 		ABA7B0F501CAFF968AE24080 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BE99635872AFB975E750 /* ApiError.swift */; };
 		ABA7B1A2A2A64B3B0F73EFE2 /* PublicIpInfoApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B734469500B1B1A4345D /* PublicIpInfoApiFetcher.swift */; };
+		ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */; };
 		ABA7B22B379168BE464135F2 /* PrototypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4D616FD739CBF1D2EB0 /* PrototypeMock.swift */; };
 		ABA7B238B02329682D9D5062 /* PerduxSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B502859932ADD22C9B7C /* PerduxSampleApp.swift */; };
 		ABA7B2863338D8E177F61A94 /* ConnectivityInfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5DE5291DD077354C66E /* ConnectivityInfoContainer.swift */; };
@@ -43,6 +45,7 @@
 		ABA7BB62BB8FF1878071BAAB /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4B90C57735D53D09B0A /* AppStore.swift */; };
 		ABA7BB78829680E4112AFEEB /* RootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B377CD028D47CEB53692 /* RootContainer.swift */; };
 		ABA7BB98D112879576E92826 /* ApiRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BED34D51C7EF541B17C7 /* ApiRequestType.swift */; };
+		ABA7BBFEB1C9B9BAC594226A /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */; };
 		ABA7BC2552B2FC1C59E2D353 /* NetworkSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BDF3493B222AFE02A6FE /* NetworkSideEffect.swift */; };
 		ABA7BC3E9E8E9D3EFD169FB2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA073C42EB5149E9FC3C /* Logger.swift */; };
 		ABA7BC43C5A004210EF46631 /* ErrorViolationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B374B6F089D27E41F8BE /* ErrorViolationType.swift */; };
@@ -56,12 +59,16 @@
 		ABA7BEAB0CC55FC6CE74C0C8 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1E7731EE398F5D9F7B9 /* OptionalExt.swift */; };
 		ABA7BF7CEE5D119DC06DCB36 /* IAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B9BCCC333E8B0AB03BDC /* IAppError.swift */; };
 		ABA7BFB42EA851BE4632A833 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B93E14E2958280BB3B0A /* NetworkService.swift */; };
+		ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */; };
 		ABA7BFE98AD873449A9550FB /* ReduxAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBD5519757C8ED909D48 /* ReduxAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31388FBA19053201360762BF /* Pods_perdux_sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perdux_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4269E51737FB06703352FE5D /* Pods-perdux_sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perdux_sample.debug.xcconfig"; path = "Target Support Files/Pods-perdux_sample/Pods-perdux_sample.debug.xcconfig"; sourceTree = "<group>"; };
 		5ED4B2D2271C1E9B000DDF2F /* perdux_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perdux_sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED4B2D9271C1E9D000DDF2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectFactory.swift; sourceTree = "<group>"; };
 		ABA7B0664741728717EEB56B /* PublicIpInfoViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoViewProps.swift; sourceTree = "<group>"; };
 		ABA7B0BAD23ECC358B1CCF27 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		ABA7B0DA2231BF2E42FF73BD /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
@@ -98,8 +105,10 @@
 		ABA7BB35D1DC335D782660F3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		ABA7BB57367CFFC2E9FE9E70 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
 		ABA7BBD5519757C8ED909D48 /* ReduxAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxAction.swift; sourceTree = "<group>"; };
+		ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		ABA7BD0EBF12CE7F5C7F467A /* PublicIpInfoApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiModel.swift; sourceTree = "<group>"; };
 		ABA7BD17B9DA34E3F9CA1932 /* NetworkAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAction.swift; sourceTree = "<group>"; };
+		ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
 		ABA7BD45E2C0536683412B1D /* BottomNavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavItem.swift; sourceTree = "<group>"; };
 		ABA7BD5D9FDC3F01CE181FD3 /* ReduxState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxState.swift; sourceTree = "<group>"; };
 		ABA7BD8EA0163E14E6439A3D /* CalendarExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExt.swift; sourceTree = "<group>"; };
@@ -111,6 +120,7 @@
 		ABA7BED34D51C7EF541B17C7 /* ApiRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequestType.swift; sourceTree = "<group>"; };
 		ABA7BF3122AB874784A5ED7D /* PublicIpInfoContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoContainerProps.swift; sourceTree = "<group>"; };
 		ABA7BF8286A38B6401ACADCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EAEE496DD0E6C14D2EC6E1C8 /* Pods-perdux_sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perdux_sample.release.xcconfig"; path = "Target Support Files/Pods-perdux_sample/Pods-perdux_sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,17 +128,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4DAB7BAB3BD916AA6522B5 /* Pods_perdux_sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0214BFEE343C8C2305FBA8F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4269E51737FB06703352FE5D /* Pods-perdux_sample.debug.xcconfig */,
+				EAEE496DD0E6C14D2EC6E1C8 /* Pods-perdux_sample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5ED4B2C9271C1E9B000DDF2F = {
 			isa = PBXGroup;
 			children = (
 				5ED4B2D4271C1E9B000DDF2F /* perdux_sample */,
 				5ED4B2D3271C1E9B000DDF2F /* Products */,
+				0214BFEE343C8C2305FBA8F8 /* Pods */,
+				89BA11A1A643FDC18E52924B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +176,14 @@
 				ABA7BAB3CC76BBA9BD37F331 /* Errorr */,
 			);
 			path = perdux_sample;
+			sourceTree = "<group>";
+		};
+		89BA11A1A643FDC18E52924B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31388FBA19053201360762BF /* Pods_perdux_sample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ABA7B0B8663FEACCBC64CA6A /* Network */ = {
@@ -192,6 +223,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		ABA7B217C9EE5614C42634C5 /* IoC */ = {
+			isa = PBXGroup;
+			children = (
+				ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */,
+				ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */,
+			);
+			path = IoC;
+			sourceTree = "<group>";
+		};
 		ABA7B32CB3CA801DFE1A2B23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +245,7 @@
 			children = (
 				ABA7B7C23132A9C4B6D9E05D /* PublicIpInfo.swift */,
 				ABA7B4A18AF3F3B46DF81498 /* NetworkModelBuilder.swift */,
+				ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +265,7 @@
 				ABA7B1D8A9A91AA6F98C8632 /* Extensions */,
 				ABA7B4D616FD739CBF1D2EB0 /* PrototypeMock.swift */,
 				ABA7BD97F8FFE171FF1A95EF /* MainQueueUtils.swift */,
+				ABA7B217C9EE5614C42634C5 /* IoC */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -260,6 +302,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		ABA7B97D6473BDA63602F536 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		ABA7B9A261EF5B8071FCB9FC /* Business */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +323,7 @@
 				ABA7B74E08E4C7AA1E97DCF4 /* ContentContainer.swift */,
 				ABA7BED80B9806CF37700181 /* Root */,
 				ABA7BA6F677CD705B70193D5 /* Pages */,
+				ABA7B97D6473BDA63602F536 /* Components */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -372,9 +422,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5ED4B2E0271C1E9D000DDF2F /* Build configuration list for PBXNativeTarget "perdux_sample" */;
 			buildPhases = (
+				8D0017747EFB1B274E20909E /* [CP] Check Pods Manifest.lock */,
 				5ED4B2CE271C1E9B000DDF2F /* Sources */,
 				5ED4B2CF271C1E9B000DDF2F /* Frameworks */,
 				5ED4B2D0271C1E9B000DDF2F /* Resources */,
+				4D18E851FE6F001DB09B35F6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,6 +482,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D18E851FE6F001DB09B35F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-perdux_sample/Pods-perdux_sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-perdux_sample/Pods-perdux_sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-perdux_sample/Pods-perdux_sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D0017747EFB1B274E20909E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-perdux_sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5ED4B2CE271C1E9B000DDF2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -483,6 +577,9 @@
 				ABA7BEAB0CC55FC6CE74C0C8 /* OptionalExt.swift in Sources */,
 				ABA7BD34E7D8AFA010B140F9 /* NetworkModelBuilder.swift in Sources */,
 				ABA7BC2552B2FC1C59E2D353 /* NetworkSideEffect.swift in Sources */,
+				ABA7BBFEB1C9B9BAC594226A /* DIContainerBuilder.swift in Sources */,
+				ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */,
+				ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +704,7 @@
 		};
 		5ED4B2E1271C1E9D000DDF2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4269E51737FB06703352FE5D /* Pods-perdux_sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -637,6 +735,7 @@
 		};
 		5ED4B2E2271C1E9D000DDF2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAEE496DD0E6C14D2EC6E1C8 /* Pods-perdux_sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

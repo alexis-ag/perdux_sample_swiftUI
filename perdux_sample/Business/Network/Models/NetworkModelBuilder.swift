@@ -5,12 +5,12 @@
 import Foundation
 
 struct NetworkModelBuilder {
-    static func buildPublicIpInfo(_ apiModel: PublicIpInfoApiModel) -> PublicIpInfo? {
+    static func buildPublicIpInfo(_ apiModel: PublicIpInfoApiModel) -> PublicIpInfo {
         PublicIpInfo(
-                ip: apiModel.query,
-                iso: apiModel.countryCode,
-                country: apiModel.country,
-                city: apiModel.city
+                ip: apiModel.ip,
+                iso: "",
+                country: "",
+                city: ""
         )
     }
 }

@@ -4,8 +4,32 @@ struct ConnectivityInfoView: View {
     let props: Props
 
     var body: some View {
-        Text("connected: \(props.status?.connected.description ?? "false")")
+        content
             .overlay(progress)
+    }
+
+    @ViewBuilder
+    private var content: some View {
+        if let status = props.status {
+
+        }
+        VStack {
+            if let status = props.status {
+                switch status.connected {
+                case true:
+                    Text("connected").foregroundColor(.green)
+                case false:
+                    Text("disconnected").foregroundColor(.red)
+                }
+
+                switch status.expensive {
+                case true:
+                    Text("cellular").foregroundColor(.red)
+                case false:
+                    Text("wi-fi").foregroundColor(.green)
+                }
+            }
+        }
     }
 
     @ViewBuilder

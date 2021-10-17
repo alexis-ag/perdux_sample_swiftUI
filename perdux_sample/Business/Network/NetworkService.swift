@@ -6,7 +6,7 @@ typealias NetworkStatus = (connected: Bool, expensive: Bool, wasChanged: Bool)
 
 protocol INetworkService {
     var status: NetworkStatus { get }
-    func getPublicIpInfo() -> PublicIpInfo?
+    func getPublicIpInfo() -> Result<PublicIpInfo, AppError>
     var networkPub: AnyPublisher<NetworkStatus, Never> { get }
 }
 
@@ -27,18 +27,16 @@ class NetworkService: INetworkService {
         startWatchNetworkCondition()
     }
 
-    func getPublicIpInfo() -> PublicIpInfo? {
+    func getPublicIpInfo() -> Result<PublicIpInfo, AppError>{
         guard status.connected else {
-            log(sender: "NetworkService", message: "cannot refresh public ip info due to bad or absent internet connection")
-            return nil
+            return .failure(AppError(sender: self, message: "no connection"))
         }
 
         switch publicIpInfoFetcher.getIpInfo() {
         case let .success(info):
-            return NetworkModelBuilder.buildPublicIpInfo(info)
+            return .success(NetworkModelBuilder.buildPublicIpInfo(info))
         case let .failure(err):
-            //todo log error in crashlitycs
-            return nil
+            return .failure(AppError(sender: self, message: #function, error: err))
         }
     }
 

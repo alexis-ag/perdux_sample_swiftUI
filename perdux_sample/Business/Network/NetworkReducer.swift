@@ -4,14 +4,17 @@ let networkReducer: Reducer<NetworkState, NetworkAction> = Reducer { state, acti
     defer {  state.notifySUI() }
 
     switch action {
+    case .obtainPublicIpInfoProgress:
+        state.networkStatus = nil
+        state.error = nil
+
     case let .updateConnectivityStatus(status):
         state.networkStatus = status
 
     case .obtainPublicIpInfoSuccess(let info):
         state.publicIpInfo = info
 
-    case .obtainPublicIpInfoFail:
-        //todo implement fail reaction
-        break
+    case let .obtainPublicIpInfoFail(cause):
+        state.error = cause
     }
 }

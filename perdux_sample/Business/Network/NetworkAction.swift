@@ -5,6 +5,7 @@ enum NetworkAction: ReduxAction {
 
     case updateConnectivityStatus(_ status: NetworkStatus)
 
+    case obtainPublicIpInfoProgress
     case obtainPublicIpInfoSuccess(_ info: PublicIpInfo)
-    case obtainPublicIpInfoFail
+    case obtainPublicIpInfoFail(_ cause: NetworkErrorType)
 }
