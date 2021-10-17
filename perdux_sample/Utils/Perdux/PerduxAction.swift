@@ -1,6 +1,5 @@
 import Foundation
 
-public protocol Effect {
-    func apply()
+public protocol PerduxAction {
     static var executionQueue: DispatchQueue { get }
 }

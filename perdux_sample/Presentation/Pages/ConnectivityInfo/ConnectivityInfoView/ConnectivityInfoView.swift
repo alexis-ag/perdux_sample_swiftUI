@@ -10,9 +10,6 @@ struct ConnectivityInfoView: View {
 
     @ViewBuilder
     private var content: some View {
-        if let status = props.status {
-
-        }
         VStack {
             if let status = props.status {
                 switch status.connected {
@@ -29,6 +26,10 @@ struct ConnectivityInfoView: View {
                     Text("wi-fi").foregroundColor(.green)
                 }
             }
+
+            Button(action: props.forceCheck) {
+                Text("Force check status")
+            }.padding()
         }
     }
 

@@ -1,6 +1,6 @@
 import Foundation
 
-enum NetworkAction: ReduxAction {
+enum NetworkAction: PerduxAction {
     static let executionQueue = DispatchQueue(label: "ConnectivityAction", qos: .default)
 
     case updateConnectivityStatus(_ status: NetworkStatus)

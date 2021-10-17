@@ -30,12 +30,12 @@
 		ABA7B5550D6248005283A257 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B88576D5C96A21C19772 /* DataExt.swift */; };
 		ABA7B62BAEC570991E081329 /* PublicIpInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B7C23132A9C4B6D9E05D /* PublicIpInfo.swift */; };
 		ABA7B75434E7A02EFB6AB13A /* ContentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B74E08E4C7AA1E97DCF4 /* ContentContainer.swift */; };
-		ABA7B776A4EBECB9FA59811C /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB57367CFFC2E9FE9E70 /* Effect.swift */; };
+		ABA7B776A4EBECB9FA59811C /* PerduxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB57367CFFC2E9FE9E70 /* PerduxEffect.swift */; };
 		ABA7B796B1BA5E8FA13FEEBF /* BottomNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD45E2C0536683412B1D /* BottomNavItem.swift */; };
 		ABA7B7AC415EFB6E2EEE43F5 /* MainQueueUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD97F8FFE171FF1A95EF /* MainQueueUtils.swift */; };
 		ABA7B8C7D9EC12730B9151B2 /* ActionDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B6F318CEC150B06C6D72 /* ActionDispatcher.swift */; };
 		ABA7B8F093E77A0B8AC783AC /* PublicIpInfoContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BF3122AB874784A5ED7D /* PublicIpInfoContainerProps.swift */; };
-		ABA7B90654676A2126B195BD /* ReduxState+ChangesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B67171E80292AF70401D /* ReduxState+ChangesType.swift */; };
+		ABA7B90654676A2126B195BD /* PerduxState+ChangesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B67171E80292AF70401D /* PerduxState+ChangesType.swift */; };
 		ABA7B91402A15B782AB2F81A /* ConnectivityInfoContainerProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B569569BCF3A2FCF4C8E /* ConnectivityInfoContainerProps.swift */; };
 		ABA7B96B3794371E51B1D3CA /* NetworkState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BDE0A3BCFFAFB6B11F17 /* NetworkState.swift */; };
 		ABA7B9716E06716B0E1840A1 /* CharacterSetExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B406EF1299F78BEA110D /* CharacterSetExt.swift */; };
@@ -53,14 +53,14 @@
 		ABA7BCD4D6EB41997ACB03C5 /* ApiSessionConfigBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1A196CD69F6DC4836FC /* ApiSessionConfigBuilder.swift */; };
 		ABA7BD261855503F216B0DA2 /* PublicIpInfoApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD0EBF12CE7F5C7F467A /* PublicIpInfoApiModel.swift */; };
 		ABA7BD34E7D8AFA010B140F9 /* NetworkModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4A18AF3F3B46DF81498 /* NetworkModelBuilder.swift */; };
-		ABA7BE4BC46111C10FA56575 /* ReduxState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD5D9FDC3F01CE181FD3 /* ReduxState.swift */; };
+		ABA7BE4BC46111C10FA56575 /* PerduxState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD5D9FDC3F01CE181FD3 /* PerduxState.swift */; };
 		ABA7BE660C253A47A68E6956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA7BF8286A38B6401ACADCD /* Preview Assets.xcassets */; };
 		ABA7BE9A174688B932079706 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB35D1DC335D782660F3 /* AppError.swift */; };
 		ABA7BEAB0CC55FC6CE74C0C8 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1E7731EE398F5D9F7B9 /* OptionalExt.swift */; };
 		ABA7BF7CEE5D119DC06DCB36 /* IAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B9BCCC333E8B0AB03BDC /* IAppError.swift */; };
 		ABA7BFB42EA851BE4632A833 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B93E14E2958280BB3B0A /* NetworkService.swift */; };
 		ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */; };
-		ABA7BFE98AD873449A9550FB /* ReduxAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBD5519757C8ED909D48 /* ReduxAction.swift */; };
+		ABA7BFE98AD873449A9550FB /* PerduxAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BBD5519757C8ED909D48 /* PerduxAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,7 +90,7 @@
 		ABA7B569569BCF3A2FCF4C8E /* ConnectivityInfoContainerProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityInfoContainerProps.swift; sourceTree = "<group>"; };
 		ABA7B57A3DE32A2536F7203D /* PublicIpInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoView.swift; sourceTree = "<group>"; };
 		ABA7B5DE5291DD077354C66E /* ConnectivityInfoContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectivityInfoContainer.swift; sourceTree = "<group>"; };
-		ABA7B67171E80292AF70401D /* ReduxState+ChangesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ReduxState+ChangesType.swift"; sourceTree = "<group>"; };
+		ABA7B67171E80292AF70401D /* PerduxState+ChangesType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PerduxState+ChangesType.swift"; sourceTree = "<group>"; };
 		ABA7B6F318CEC150B06C6D72 /* ActionDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionDispatcher.swift; sourceTree = "<group>"; };
 		ABA7B734469500B1B1A4345D /* PublicIpInfoApiFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiFetcher.swift; sourceTree = "<group>"; };
 		ABA7B74E08E4C7AA1E97DCF4 /* ContentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentContainer.swift; sourceTree = "<group>"; };
@@ -103,14 +103,14 @@
 		ABA7B9BCCC333E8B0AB03BDC /* IAppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAppError.swift; sourceTree = "<group>"; };
 		ABA7BA073C42EB5149E9FC3C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		ABA7BB35D1DC335D782660F3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
-		ABA7BB57367CFFC2E9FE9E70 /* Effect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
-		ABA7BBD5519757C8ED909D48 /* ReduxAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxAction.swift; sourceTree = "<group>"; };
+		ABA7BB57367CFFC2E9FE9E70 /* PerduxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxEffect.swift; sourceTree = "<group>"; };
+		ABA7BBD5519757C8ED909D48 /* PerduxAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxAction.swift; sourceTree = "<group>"; };
 		ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		ABA7BD0EBF12CE7F5C7F467A /* PublicIpInfoApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiModel.swift; sourceTree = "<group>"; };
 		ABA7BD17B9DA34E3F9CA1932 /* NetworkAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAction.swift; sourceTree = "<group>"; };
 		ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
 		ABA7BD45E2C0536683412B1D /* BottomNavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomNavItem.swift; sourceTree = "<group>"; };
-		ABA7BD5D9FDC3F01CE181FD3 /* ReduxState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxState.swift; sourceTree = "<group>"; };
+		ABA7BD5D9FDC3F01CE181FD3 /* PerduxState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxState.swift; sourceTree = "<group>"; };
 		ABA7BD8EA0163E14E6439A3D /* CalendarExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarExt.swift; sourceTree = "<group>"; };
 		ABA7BD97F8FFE171FF1A95EF /* MainQueueUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainQueueUtils.swift; sourceTree = "<group>"; };
 		ABA7BDE0A3BCFFAFB6B11F17 /* NetworkState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkState.swift; sourceTree = "<group>"; };
@@ -274,11 +274,11 @@
 			isa = PBXGroup;
 			children = (
 				ABA7B6F318CEC150B06C6D72 /* ActionDispatcher.swift */,
-				ABA7BB57367CFFC2E9FE9E70 /* Effect.swift */,
+				ABA7BB57367CFFC2E9FE9E70 /* PerduxEffect.swift */,
 				ABA7BA073C42EB5149E9FC3C /* Logger.swift */,
-				ABA7BBD5519757C8ED909D48 /* ReduxAction.swift */,
-				ABA7BD5D9FDC3F01CE181FD3 /* ReduxState.swift */,
-				ABA7B67171E80292AF70401D /* ReduxState+ChangesType.swift */,
+				ABA7BBD5519757C8ED909D48 /* PerduxAction.swift */,
+				ABA7BD5D9FDC3F01CE181FD3 /* PerduxState.swift */,
+				ABA7B67171E80292AF70401D /* PerduxState+ChangesType.swift */,
 				ABA7B0BAD23ECC358B1CCF27 /* Reducer.swift */,
 				ABA7B4B90C57735D53D09B0A /* AppStore.swift */,
 			);
@@ -532,14 +532,14 @@
 				ABA7B238B02329682D9D5062 /* PerduxSampleApp.swift in Sources */,
 				ABA7B75434E7A02EFB6AB13A /* ContentContainer.swift in Sources */,
 				ABA7B8C7D9EC12730B9151B2 /* ActionDispatcher.swift in Sources */,
-				ABA7B776A4EBECB9FA59811C /* Effect.swift in Sources */,
+				ABA7B776A4EBECB9FA59811C /* PerduxEffect.swift in Sources */,
 				ABA7BC3E9E8E9D3EFD169FB2 /* Logger.swift in Sources */,
-				ABA7BFE98AD873449A9550FB /* ReduxAction.swift in Sources */,
-				ABA7BE4BC46111C10FA56575 /* ReduxState.swift in Sources */,
+				ABA7BFE98AD873449A9550FB /* PerduxAction.swift in Sources */,
+				ABA7BE4BC46111C10FA56575 /* PerduxState.swift in Sources */,
 				ABA7B396657C065A96CC3B18 /* DateExt.swift in Sources */,
 				ABA7BC6602943710F0B51308 /* ArrayExt.swift in Sources */,
 				ABA7B22B379168BE464135F2 /* PrototypeMock.swift in Sources */,
-				ABA7B90654676A2126B195BD /* ReduxState+ChangesType.swift in Sources */,
+				ABA7B90654676A2126B195BD /* PerduxState+ChangesType.swift in Sources */,
 				ABA7B7AC415EFB6E2EEE43F5 /* MainQueueUtils.swift in Sources */,
 				ABA7B441B7279AE4F3EA6975 /* StringExt.swift in Sources */,
 				ABA7B40D7FED49413559000D /* CalendarExt.swift in Sources */,

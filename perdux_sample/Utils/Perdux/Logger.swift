@@ -26,7 +26,7 @@ func log(sender: String = #fileID, _ error: Error, comment: String = "", _ categ
     Logger.log(sender: strppedFileId, error: error, category: category)
 }
 
-func log<Action: ReduxAction>(_ action: Action, _ category: os.Logger = .reduxMsg) {
+func log<Action: PerduxAction>(_ action: Action, _ category: os.Logger = .reduxMsg) {
     Logger.log(action, category)
 }
 
@@ -80,7 +80,7 @@ class Logger {
         #endif
     }
 
-    class func log(state: ReduxState, fieldName: String, event: ReduxState.ChangesType, oldValue: Any?, newValue: Any?) {
+    class func log(state: PerduxState, fieldName: String, event: PerduxState.ChangesType, oldValue: Any?, newValue: Any?) {
         #if DEBUG
 
         let sender = "\(Mirror(reflecting: state).subjectType)"
@@ -133,7 +133,7 @@ class Logger {
         #endif
     }
 
-    class func log<Action: ReduxAction>(_ action: Action, _ category: os.Logger = .reduxAction) {
+    class func log<Action: PerduxAction>(_ action: Action, _ category: os.Logger = .reduxAction) {
         #if DEBUG
 
         let sender = "\(type(of: action))"
@@ -144,12 +144,12 @@ class Logger {
         #endif
     }
 
-    class func log(_ effects: [Effect]) {
+    class func log(_ effects: [PerduxEffect]) {
         effects
             .forEach(log)
     }
 
-    class func log(_ effect: Effect) {
+    class func log(_ effect: PerduxEffect) {
         #if DEBUG
 
         let sender = "\(type(of: effect))"

@@ -9,7 +9,7 @@ import Combine
  * It means that their state is not determined yet
  * and on UI we show progress or nothing as initial UI state.
  */
-open class ReduxState: ObservableObject {
+open class PerduxState: ObservableObject {
     public let objectDidChange = ObservableObjectPublisher()
     private var observers: Set<AnyCancellable> = []
     private let updateSuiPub = ObservableObjectPublisher()
@@ -23,7 +23,7 @@ open class ReduxState: ObservableObject {
 
     }
 
-    public func reduce(with action: ReduxAction) {
+    public func reduce(with action: PerduxAction) {
         fatalError("\(#function) NOT IMPLEMENTED")
     }
 

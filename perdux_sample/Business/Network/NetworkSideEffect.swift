@@ -1,7 +1,7 @@
 import Foundation
 import Combine
 
-enum NetworkSideEffect: Effect {
+enum NetworkSideEffect: PerduxEffect {
     case forceUpdateStatus
     case startWatchConnectivityChanges
     case stopWatchConnectivityChanges

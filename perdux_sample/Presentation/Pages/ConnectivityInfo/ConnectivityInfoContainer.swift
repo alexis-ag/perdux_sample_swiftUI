@@ -7,9 +7,9 @@ struct ConnectivityInfoContainer: View {
 
     var body: some View {
         ConnectivityInfoView(props: .init(
-                status: connectivityState.networkStatus
+                status: connectivityState.networkStatus,
+                forceCheck: forceCheckStatus
         ))
-        .onAppear(perform: forceCheckStatus)
     }
 
     private func forceCheckStatus() {
