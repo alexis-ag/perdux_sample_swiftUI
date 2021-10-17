@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct PerduxSampleApp: App {
-    public static var appStore: AppStore!
+    public static var appStore: PerduxStore!
 
     init() {
         Self.configureIoC()

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentContainer: View {
-    let appStore: AppStore
+    let appStore: PerduxStore
 
     var body: some View {
         RootContainer()

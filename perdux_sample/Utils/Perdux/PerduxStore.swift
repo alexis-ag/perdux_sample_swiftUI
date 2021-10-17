@@ -1,6 +1,6 @@
 import Foundation
 
-class AppStore: ActionDispatcherSubscriber {
+class PerduxStore: ActionDispatcherSubscriber {
     private(set) var states: [PerduxState] = []
 
     init() {
