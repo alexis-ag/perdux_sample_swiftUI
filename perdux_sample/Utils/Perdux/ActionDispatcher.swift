@@ -67,35 +67,4 @@ class ActionDispatcher {
             }
         }
     }
-
-    class func emitSync<E: PerduxEffect>(_ effect: E) {
-        Logger.log(effect)
-        E.executionQueue.sync {
-            effect.apply()
-        }
-    }
-
-    class func emitAsync<E: PerduxEffect>(_ effect: E) {
-        Logger.log(effect)
-        E.executionQueue.async {
-            effect.apply()
-        }
-    }
-
-    class func emitAsync<E: PerduxEffect>(_ effects: [E]) {
-        E.executionQueue.async {
-            effects
-                    .forEach { effect in
-                        Logger.log(effect)
-                        effect.apply()
-                    }
-        }
-    }
-
-    class func emitAsync<E: PerduxEffect>(_ effect: E, delay: Double) {
-        Logger.log(effect)
-        E.executionQueue.asyncAfter(deadline: .now() + delay) {
-            effect.apply()
-        }
-    }
 }

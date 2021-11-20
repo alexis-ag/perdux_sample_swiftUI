@@ -3,10 +3,12 @@ import SwiftUI
 @main
 struct PerduxSampleApp: App {
     public static var appStore: PerduxStore!
+    public static var rootSaga: PerduxRootSaga!
 
     init() {
         Self.configureIoC()
         Self.configureAppStore()
+        Self.configureAppSagas()
         Self.setupAppContext()
     }
 
@@ -23,6 +25,11 @@ struct PerduxSampleApp: App {
     static private func configureAppStore() {
         appStore = .init()
         appStore.connect(state: NetworkState())
+    }
+
+    static private func configureAppSagas() {
+        rootSaga = . init()
+        rootSaga.add(saga: F.get(type: NetworkSaga.self)!)
     }
 
     static private func setupAppContext() {

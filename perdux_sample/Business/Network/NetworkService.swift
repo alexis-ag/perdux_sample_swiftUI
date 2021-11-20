@@ -16,7 +16,7 @@ class NetworkService: INetworkService {
 
     private let queue = DispatchQueue(label: "NetworkMonitor", qos: .userInitiated)
     private(set) var status: NetworkStatus = (connected: false, expensive: false, wasChanged: false)
-    private let networkSub = PassthroughSubject<NetworkStatus, Never>()
+    private let networkSub = CurrentValueSubject<NetworkStatus, Never>((connected: false, expensive: false, wasChanged: false))
     var networkPub: AnyPublisher<NetworkStatus, Never> { networkSub.eraseToAnyPublisher() }
 
     init (

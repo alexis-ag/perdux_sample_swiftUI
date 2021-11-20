@@ -18,6 +18,7 @@
 		ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */; };
 		ABA7B22B379168BE464135F2 /* PrototypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4D616FD739CBF1D2EB0 /* PrototypeMock.swift */; };
 		ABA7B238B02329682D9D5062 /* PerduxSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B502859932ADD22C9B7C /* PerduxSampleApp.swift */; };
+		ABA7B247B4B87D041CB6F7F9 /* PerduxSaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BC94051F59CDA63C9837 /* PerduxSaga.swift */; };
 		ABA7B2863338D8E177F61A94 /* ConnectivityInfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5DE5291DD077354C66E /* ConnectivityInfoContainer.swift */; };
 		ABA7B32C832102CFAA0E9954 /* PublicIpInfoViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B0664741728717EEB56B /* PublicIpInfoViewProps.swift */; };
 		ABA7B396657C065A96CC3B18 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1F897C5EFB2DFE7DEBB /* DateExt.swift */; };
@@ -57,6 +58,7 @@
 		ABA7BE660C253A47A68E6956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA7BF8286A38B6401ACADCD /* Preview Assets.xcassets */; };
 		ABA7BE9A174688B932079706 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BB35D1DC335D782660F3 /* AppError.swift */; };
 		ABA7BEAB0CC55FC6CE74C0C8 /* OptionalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B1E7731EE398F5D9F7B9 /* OptionalExt.swift */; };
+		ABA7BF2473FB4699E74A5A3A /* NetworkSaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B17E08708AE8BC13C4F8 /* NetworkSaga.swift */; };
 		ABA7BF7CEE5D119DC06DCB36 /* IAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B9BCCC333E8B0AB03BDC /* IAppError.swift */; };
 		ABA7BFB42EA851BE4632A833 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B93E14E2958280BB3B0A /* NetworkService.swift */; };
 		ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */; };
@@ -72,6 +74,7 @@
 		ABA7B0664741728717EEB56B /* PublicIpInfoViewProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoViewProps.swift; sourceTree = "<group>"; };
 		ABA7B0BAD23ECC358B1CCF27 /* Reducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		ABA7B0DA2231BF2E42FF73BD /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		ABA7B17E08708AE8BC13C4F8 /* NetworkSaga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSaga.swift; sourceTree = "<group>"; };
 		ABA7B1A196CD69F6DC4836FC /* ApiSessionConfigBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSessionConfigBuilder.swift; sourceTree = "<group>"; };
 		ABA7B1E7731EE398F5D9F7B9 /* OptionalExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalExt.swift; sourceTree = "<group>"; };
 		ABA7B1F897C5EFB2DFE7DEBB /* DateExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
@@ -105,6 +108,7 @@
 		ABA7BB35D1DC335D782660F3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		ABA7BB57367CFFC2E9FE9E70 /* PerduxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxEffect.swift; sourceTree = "<group>"; };
 		ABA7BBD5519757C8ED909D48 /* PerduxAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxAction.swift; sourceTree = "<group>"; };
+		ABA7BC94051F59CDA63C9837 /* PerduxSaga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxSaga.swift; sourceTree = "<group>"; };
 		ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		ABA7BD0EBF12CE7F5C7F467A /* PublicIpInfoApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiModel.swift; sourceTree = "<group>"; };
 		ABA7BD17B9DA34E3F9CA1932 /* NetworkAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAction.swift; sourceTree = "<group>"; };
@@ -195,6 +199,7 @@
 				ABA7B93832AD0A611B0E800A /* NetworkReducer.swift */,
 				ABA7BD17B9DA34E3F9CA1932 /* NetworkAction.swift */,
 				ABA7BDF3493B222AFE02A6FE /* NetworkSideEffect.swift */,
+				ABA7B17E08708AE8BC13C4F8 /* NetworkSaga.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				ABA7B67171E80292AF70401D /* PerduxState+ChangesType.swift */,
 				ABA7B0BAD23ECC358B1CCF27 /* Reducer.swift */,
 				ABA7B4B90C57735D53D09B0A /* PerduxStore.swift */,
+				ABA7BC94051F59CDA63C9837 /* PerduxSaga.swift */,
 			);
 			path = Perdux;
 			sourceTree = "<group>";
@@ -580,6 +586,8 @@
 				ABA7BBFEB1C9B9BAC594226A /* DIContainerBuilder.swift in Sources */,
 				ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */,
 				ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */,
+				ABA7BF2473FB4699E74A5A3A /* NetworkSaga.swift in Sources */,
+				ABA7B247B4B87D041CB6F7F9 /* PerduxSaga.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

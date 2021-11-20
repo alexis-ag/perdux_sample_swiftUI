@@ -20,6 +20,13 @@ class DIContainerBuilder {
     }
 
     private static func registerNetworkModules(container: Container) {
+        container.register(NetworkSaga.self) { (resolver: Resolver) -> NetworkSaga in
+                    NetworkSaga(
+                            networkService: resolver.resolve(INetworkService.self)!
+                    )
+                }
+                .inObjectScope(.container)
+
         container.register(INetworkService.self) { (resolver: Resolver) -> INetworkService in
                     NetworkService(
                             publicIpInfoFetcher: resolver.resolve(IPublicIpInfoFetcher.self)!
