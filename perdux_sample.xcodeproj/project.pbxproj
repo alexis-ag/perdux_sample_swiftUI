@@ -18,6 +18,7 @@
 		ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */; };
 		ABA7B22B379168BE464135F2 /* PrototypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4D616FD739CBF1D2EB0 /* PrototypeMock.swift */; };
 		ABA7B238B02329682D9D5062 /* PerduxSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B502859932ADD22C9B7C /* PerduxSampleApp.swift */; };
+		ABA7B241388B6C21CFC1D9BC /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B8101545C07FC6E4AB3D /* DIContainerBuilder.swift */; };
 		ABA7B247B4B87D041CB6F7F9 /* PerduxSaga.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BC94051F59CDA63C9837 /* PerduxSaga.swift */; };
 		ABA7B2863338D8E177F61A94 /* ConnectivityInfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B5DE5291DD077354C66E /* ConnectivityInfoContainer.swift */; };
 		ABA7B32C832102CFAA0E9954 /* PublicIpInfoViewProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B0664741728717EEB56B /* PublicIpInfoViewProps.swift */; };
@@ -46,7 +47,6 @@
 		ABA7BB62BB8FF1878071BAAB /* PerduxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B4B90C57735D53D09B0A /* PerduxStore.swift */; };
 		ABA7BB78829680E4112AFEEB /* RootContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B377CD028D47CEB53692 /* RootContainer.swift */; };
 		ABA7BB98D112879576E92826 /* ApiRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BED34D51C7EF541B17C7 /* ApiRequestType.swift */; };
-		ABA7BBFEB1C9B9BAC594226A /* DIContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */; };
 		ABA7BC2552B2FC1C59E2D353 /* NetworkSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BDF3493B222AFE02A6FE /* NetworkSideEffect.swift */; };
 		ABA7BC3E9E8E9D3EFD169FB2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7BA073C42EB5149E9FC3C /* Logger.swift */; };
 		ABA7BC43C5A004210EF46631 /* ErrorViolationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA7B374B6F089D27E41F8BE /* ErrorViolationType.swift */; };
@@ -98,6 +98,7 @@
 		ABA7B734469500B1B1A4345D /* PublicIpInfoApiFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiFetcher.swift; sourceTree = "<group>"; };
 		ABA7B74E08E4C7AA1E97DCF4 /* ContentContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentContainer.swift; sourceTree = "<group>"; };
 		ABA7B7C23132A9C4B6D9E05D /* PublicIpInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfo.swift; sourceTree = "<group>"; };
+		ABA7B8101545C07FC6E4AB3D /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		ABA7B846B86327320085C1F5 /* BoolExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExt.swift; sourceTree = "<group>"; };
 		ABA7B88576D5C96A21C19772 /* DataExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 		ABA7B90D94B2C6A6D425E9C6 /* ApiUrls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUrls.swift; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		ABA7BB57367CFFC2E9FE9E70 /* PerduxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxEffect.swift; sourceTree = "<group>"; };
 		ABA7BBD5519757C8ED909D48 /* PerduxAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxAction.swift; sourceTree = "<group>"; };
 		ABA7BC94051F59CDA63C9837 /* PerduxSaga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerduxSaga.swift; sourceTree = "<group>"; };
-		ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIContainerBuilder.swift; sourceTree = "<group>"; };
 		ABA7BD0EBF12CE7F5C7F467A /* PublicIpInfoApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicIpInfoApiModel.swift; sourceTree = "<group>"; };
 		ABA7BD17B9DA34E3F9CA1932 /* NetworkAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAction.swift; sourceTree = "<group>"; };
 		ABA7BD2C57508F58C4314C70 /* NetworkErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorType.swift; sourceTree = "<group>"; };
@@ -231,7 +231,6 @@
 		ABA7B217C9EE5614C42634C5 /* IoC */ = {
 			isa = PBXGroup;
 			children = (
-				ABA7BCC620144FE1556F0F7C /* DIContainerBuilder.swift */,
 				ABA7B00C8AA46F1703179CE5 /* ObjectFactory.swift */,
 			);
 			path = IoC;
@@ -417,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				ABA7B502859932ADD22C9B7C /* PerduxSampleApp.swift */,
+				ABA7B8101545C07FC6E4AB3D /* DIContainerBuilder.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -583,11 +583,11 @@
 				ABA7BEAB0CC55FC6CE74C0C8 /* OptionalExt.swift in Sources */,
 				ABA7BD34E7D8AFA010B140F9 /* NetworkModelBuilder.swift in Sources */,
 				ABA7BC2552B2FC1C59E2D353 /* NetworkSideEffect.swift in Sources */,
-				ABA7BBFEB1C9B9BAC594226A /* DIContainerBuilder.swift in Sources */,
 				ABA7B1B10355BD294E017171 /* ObjectFactory.swift in Sources */,
 				ABA7BFDD7AAA5050284D54D1 /* NetworkErrorType.swift in Sources */,
 				ABA7BF2473FB4699E74A5A3A /* NetworkSaga.swift in Sources */,
 				ABA7B247B4B87D041CB6F7F9 /* PerduxSaga.swift in Sources */,
+				ABA7B241388B6C21CFC1D9BC /* DIContainerBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
