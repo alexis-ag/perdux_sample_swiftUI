@@ -2,7 +2,7 @@
 REDUX like architecture sample for iOS (target 14.*)
 
 Motivation:
-- to share reactive architecture approach with single direction ddata flow and SOA
+- to share reactive architecture approach with single direction data flow and SOA
 
 Layers
 * Data
